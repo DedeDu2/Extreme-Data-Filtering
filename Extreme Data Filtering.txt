@@ -1,0 +1,13 @@
+import pandas as pd
+
+# Create a DataFrame with exaggerated data
+data = pd.DataFrame({
+    'Cats Owned': [2, 5, 10, 20, 50],
+    'Amount of Chocolate Consumed (kg)': [0.1, 0.5, 1, 2, 5]
+})
+
+# Filter data based on an exaggerated condition
+filtered_data = data[data['Cats Owned'] > 15]
+
+# Display the exaggerated subset
+print(filtered_data)
